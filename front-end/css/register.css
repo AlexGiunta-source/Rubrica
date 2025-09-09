@@ -1,0 +1,85 @@
+.box-1 {
+    background-color: #e0e0e0;
+    width: 30%;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    gap: 30px;
+    transition: width 0.5s ease;
+
+
+
+}
+
+#form-registrazione,
+input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    border-radius: 10px;
+    border: #c7c7c7;
+
+
+
+}
+
+
+h3 {
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type="text"]:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #d0e7ff;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #008000;
+    outline: none;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+input[type="password"]:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #d0e7ff;
+    outline: none;
+}
+
+input[type="password"]:focus {
+    outline: none;
+}
+
+a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.box-1:hover {
+    width: 35%;
+}
+
+h1 {
+    text-decoration: none;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: none;
+}

@@ -1,0 +1,115 @@
+.messaggio-benvenuto {
+    text-align: center;
+    color: #b1b1b1;
+
+
+}
+
+.messaggioContatto {
+    text-align: center;
+    color: #b1b1b1;
+}
+
+.aggiungiContatto {
+    height: 500px;
+    width: 400px;
+    background-color: #e9e9e9;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="submit"] {
+    height: 30px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-left: 10px
+}
+
+.box,
+.box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #007bff;
+    outline: none;
+    background-color: #f0f8ff;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+}
+
+.form-nome,
+.form-cognome,
+.form-numeroTelefono {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 40px;
+}
+
+.cercaContatto {
+    height: 600px;
+    width: 400px;
+    background-color: #e9e9e9;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.campo-cercaNome,
+.campo-cercaCognome,
+.campo-cercaNumeroTelefono,
+.campo-eliminaContatto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+
+    margin-bottom: 20px;
+
+}
+
+#bottone-cancella:hover {
+    background-color: #9a0300;
+    color: white;
+    cursor: pointer;
+}
+
+#logout {
+    border-radius: 5px;
+    background-color: #9a0300;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    width: 70px;
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: width 0.5s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logout:hover {
+    width: 80px;
+}

@@ -1,0 +1,12 @@
+html, body{
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/immagini/julian-hochgesang-Dkn8-zPIbwo-unsplash.jpg');
+    background-position: center;
+}

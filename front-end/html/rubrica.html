@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubrica</title>
+    <link rel="stylesheet" href="/css/body.css">
+    <link rel="stylesheet" href="/css/elementi.css">
+    <script src="/js/aggiuntaContatto.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="/js/cercaPerNome.js" defer></script>
+    <script src="/js/cercaPerCognome.js " defer></script>
+    <script src="/js/cercaPerNumeroTelefono.js" defer></script>
+    <script src="/js/eliminaContatto.js" defer></script>
+    <script src="/js/logout.js" defer></script>
+</head>
+
+<body>
+
+    <button id="logout">Logout</button>
+    </div>
+
+    <h1 class="messaggio-benvenuto">Benvenuto nella rubrica virtuale</h1>
+
+    <h2 class="messaggioContatto">Compila il form per aggiungere un contatto alla rubrica</h2>
+    <div class="box">
+        <div class="aggiungiContatto">
+            <form action="" id="aggiungi">
+                <div class="form-nome">
+                    <label for="">Nome</label>
+                    <input type="text" id="nome" placeholder="Nome">
+                </div>
+                <div class="form-cognome">
+                    <label for="" class="input-cognome">Cognome</label>
+                    <input type="text" id="cognome" class="input-cognome" placeholder="Cognome">
+                </div>
+                <div class="form-numeroTelefono">
+                    <label for="" class="input-numeroTelefono">Numero di telefono</label>
+                    <input type="text" id="numeroTelefono" class="input-numeroTelefono" placeholder="Numero telefono">
+                </div>
+                <input type="submit" class="bottone-form" value="Aggiungi contatto">
+            </form>
+        </div>
+    </div>
+    <div class="box-2">
+        <div class="cercaContatto" id="cercaPerNome">
+            <form action="" id="form-nome">
+                <div class="campo-cercaNome">
+                    <label for="">Cerca per nome</label>
+                    <input type="text" id="cercaNome" placeholder="Inserisci il nome">
+                    <input type="submit" id="bottone-nome" value="Cerca per nome">
+            </form>
+        </div>
+        <form action="" id="formCognome">
+            <div class="campo-cercaCognome">
+                <label for="">Cerca per cognome</label>
+                <input type="text" id="cercaCognome" placeholder="Inserisci il cognome">
+                <input type="submit" value="Cerca per cognome">
+            </div>
+        </form>
+        <form action="" id="formNumeroTelefono">
+            <div class="campo-cercaNumeroTelefono">
+                <label for="">Cerca per numero</label>
+                <input type="text" id="cercaNumeroTelefono" placeholder="Inserisci il numero di telefono">
+                <input type="submit" value="Cerca per numero">
+            </div>
+        </form>
+        <form action="" id="eliminaContatto">
+            <div class="campo-eliminaContatto">
+                <label for="">Elimina per id</label>
+                <input type="text" id="inputIdContatto" placeholder="Inserisci id del contatto">
+                <input type="submit" id="bottone-cancella" value="Elimina contatto">
+            </div>
+        </form>
+        <a href="dashBoard.html">Lista Contatti</a>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
