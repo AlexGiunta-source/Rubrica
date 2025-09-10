@@ -90,6 +90,7 @@ public class ContattoService {
 		 * Metodo per aggiungere un contatto alla rubrica. 
 		 * cerca l'entità Utente, se non lo trova lancia errore
 		 * converte il dto ContattoDto in un'entità Contatto
+		 * Elimina eventuali spazi dai dati in entrata
 		 * controlla se esiste un contatto con lo stesso numero, se esiste lancia errore
 		 * @param email dell'entità Utente
 		 * @param contattoDto dati in entrata necessari per il salvataggio del contatto
@@ -101,6 +102,9 @@ public class ContattoService {
 		public  Contatto  salvaContatto(String email, ContattoDto contattoDto){
 			Utente convalidaUtente = utenteRepository.findByEmail(email).orElseThrow(() -> new UtenteNonTrovatoException("Impossibile completare l'operazione, utente non trovato")); 
 			Contatto nuovoContatto = contattoMapper.fromDto(contattoDto);
+			nuovoContatto.setNome(contattoDto.getNome().trim());
+			nuovoContatto.setCognome(contattoDto.getCognome().trim());
+			nuovoContatto.setNumeroTelefono(contattoDto.getNumeroTelefono().trim().replaceAll("\\s+", ""));
 			boolean esisteContatto = contattoRepository.findByNumeroTelefonoAndUtente(nuovoContatto.getNumeroTelefono(), convalidaUtente).isPresent();
 			if(esisteContatto) {
 				throw new ContattoPresenteException("E' già presente un contatto con questo numero di telefono, riprova");

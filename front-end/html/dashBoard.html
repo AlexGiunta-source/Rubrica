@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard rubrica</title>
+     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/dashBoard.css">
-    <script src="/js/dashBoard.js" defer ></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/js/dashBoard.js" defer></script>
+   
+
 </head>
+
 <body>
     <div class="box">
         <div id="dashBoard-contatto">
-           <h2>Lista  contatti:</h2>
-           <a href="rubrica.html">Torna alla pagina principale</a> 
+            <h1>Lista contatti presenti nella rubrica:</h1>
+            <table id="tabellaContatti">
+                <tr>
+                    <th>id</th>
+                    <th>nome</th>
+                    <th>cognome</th>
+                    <th>numero telefono</th>
+                </tr>
+                <tr>
+                    <td id="IdContatto"></td>
+                    <td id="nomeContatto"></td>
+                    <td id="cognomeContatto"></td>
+                    <td id="numeroTelefonoContatto"></td>
+                </tr>
+            </table>
+            <button id="bottoneHome">Torna alla pagina principale</button>
         </div>
     </div>
 </body>
+
 </html>

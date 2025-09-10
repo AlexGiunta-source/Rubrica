@@ -1,13 +1,21 @@
+html,
+body {
+    background-image: url(/immagini/immagine-rubrica2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+}
+
 .messaggio-benvenuto {
     text-align: center;
-    color: #b1b1b1;
-
-
+    color: white;
 }
 
 .messaggioContatto {
     text-align: center;
-    color: #b1b1b1;
+    color: white;
 }
 
 .aggiungiContatto {
