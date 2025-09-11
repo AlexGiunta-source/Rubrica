@@ -1,4 +1,7 @@
 # Rubrica
+## Documentazione 
+Per consultare ulteriore documetazione dettagliata, consultare il pdf.
+
 ## Una semplice rubrica online che permette di aggiungere, cercare ed eliminare contatti
 ## Caratteristiche principali:
 - Aggiungere un contatto alla rubrica
